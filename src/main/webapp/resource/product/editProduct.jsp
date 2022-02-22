@@ -40,21 +40,22 @@
                     <option value="Hair Care">Hair Care</option>
                     <option value="Lip Care">Lip Care</option>
                     <option value="Functional Food">Functional Food</option>
+
                 </select>
             </div>
             <div class="form-group col-sm-3">
-                <label for="myCity">Name</label>
+                <label for="Name">Name</label>
                 <input value="<c:out value='${product.nameP}' />" name="nameP" id="Name" type="text"
-                       class="form-control" id="myCity">
+                       class="form-control">
             </div>
             <div class="form-group col-sm-1">
                 <label for="Quantity">Quantity</label>
                 <input value="<c:out value='${product.quantityP}'/>" onkeypress='check(event,this,10000)' name="quantityP" id="Quantity" data-toggle="tooltip" data-placement="top"
-                       title="Less than 10,000 " type="text" class="form-control" >
+                       title="Only Number and Less than 10,000 " type="text" class="form-control" >
             </div>
             <div class="form-group col-sm-1">
                 <label for="Price">Price</label>
-                <input value="<c:out value='${product.priceP}'/>" onkeypress='check(event,this,100000000)' name="priceP" id="Price" data-toggle="tooltip" data-placement="top" title="Less than 100,0000,000"
+                <input value="<c:out value='${product.priceP}'/>" onkeypress='check(event,this,100000000)' name="priceP" id="Price" data-toggle="tooltip" data-placement="top" title="Only Number and Less than 100,0000,000"
                        type="text" class="form-control" >
             </div>
         </div>

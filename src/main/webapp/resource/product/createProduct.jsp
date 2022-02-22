@@ -40,12 +40,12 @@
             </div>
             <div class="form-group col-sm-1">
                 <label for="Quantity">Quantity</label>
-                <input onkeypress='check(event,this,10000)' name="quantityP" id="Quantity" data-toggle="tooltip" data-placement="top" title="Less than 10,000 " type="text"
+                <input onkeypress='check(event,this,10000)' name="quantityP" id="Quantity" data-toggle="tooltip" data-placement="top" title="Only Number and Less than 10,000 " type="text"
                        class="form-control" >
             </div>
             <div class="form-group col-sm-1">
                 <label for="Price">Price</label>
-                <input onkeypress='check(event,this,100000000)' name="priceP" id="Price" data-toggle="tooltip" data-placement="top" title="Less than 100,0000,000" type="text"
+                <input onkeypress='check(event,this,100000000)' name="priceP" id="Price" data-toggle="tooltip" data-placement="top" title="Only Number and Less than 100,0000,000" type="text"
                        class="form-control" >
             </div>
         </div>

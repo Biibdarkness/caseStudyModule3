@@ -25,7 +25,7 @@
         </div>
         <div class="col-6 align-content-end ">
             <form method="post" action="/products?action=search" class="float-right">
-                <input type="text" placeholder="Search" name="key">
+                <input type="text" placeholder="Search" name="key" required>
                 <input type="submit" value="Search">
             </form>
         </div>
