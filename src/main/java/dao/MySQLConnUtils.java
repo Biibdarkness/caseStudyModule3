@@ -1,0 +1,27 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class MySQLConnUtils {
+    public static Connection getConnection() throws SQLException {
+        String hostName = "localhost";
+        String dbName = "eadb?useUnicode=true&characterEncoding=UTF-8";
+        String userName = "root";
+        String password = "123123";
+        return getSqlConnection(hostName, dbName, userName, password);
+    }
+
+    public static Connection getSqlConnection(String hostName, String dbName, String userName, String password) {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            String connectionURL = "jdbc:mysql://" + hostName + ":3306/" + dbName;
+            return DriverManager.getConnection(connectionURL, userName, password);
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+}
